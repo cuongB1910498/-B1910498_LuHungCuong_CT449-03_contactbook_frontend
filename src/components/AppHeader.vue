@@ -8,6 +8,18 @@
                 <i class="fas fa-address-book"></i>
                 </router-link>
             </li>
+
+            <li class="nav-item">
+                <router-link :to="{ name: 'login' }" class="nav-link">
+                Login
+                </router-link>
+            </li>
+
+            <li class="nav-item">
+                <router-link :to="{ name: 'register' }" class="nav-link">
+                Register
+                </router-link>
+            </li>
         </div>
     </nav>
 </template>

@@ -3,9 +3,9 @@ import ContactBook from "@/views/ContactBook.vue";
 
 const routes = [
     {
-    path: "/",
-    name: "contactbook",
-    component: ContactBook,
+        path: "/",
+        name: "contactbook",
+        component: ContactBook,
     },
     
     {
@@ -25,6 +25,20 @@ const routes = [
         path: "/contacts",
         name: "contact.add",
         component: () => import("@/views/ContactAdd.vue"),
+        props: true
+    },
+
+    {
+        path: "/login",
+        name: "login",
+        component: () => import("@/views/Login.vue"),
+        props: true
+    },
+
+    {
+        path: "/register",
+        name: "register",
+        component: () => import("@/views/Register.vue"),
         props: true
     },
 ];

@@ -22,4 +22,4 @@
     max-width: 400px;
     margin: auto;
   }
-</style>  
+</style>

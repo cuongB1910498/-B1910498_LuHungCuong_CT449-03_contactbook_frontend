@@ -28,5 +28,9 @@ class ContactService {
     async delete(id) {
         return (await this.api.delete(`/${id}`)).data;
     }
+
+    async login(){
+        return (await this.api.post(`/`, data)).data
+    }
 }
 export default new ContactService();
